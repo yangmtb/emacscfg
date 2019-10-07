@@ -1,0 +1,8 @@
+* emacs
+** Load Path https://www.emacswiki.org/emacs/LoadPath
+*** 添加一个目录
+    (add-to-list 'load-path "~/.emacs.d/lisp/")
+    目录名不是必须用/结尾
+*** 添加一个递归目录
+    (let ((default-directory "~/.emacs.d/lisp/"))
+      (normal-top-level-add-subdirs-to-load-path))
